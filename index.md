@@ -1,17 +1,11 @@
-<!DOCTYPE html>
 <html>
 <body>
 
-<p>This example uses the HTML DOM to assign an "onclick" event to a p element.</p>
-
-<p id="demo">Click me.</p>
+<p>Lisstener sample</p>
 
 <script>
-document.getElementById("demo").onclick = function() {myFunction()};
-
-function myFunction() {
-  document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
-}
+let win = window.frames.example;
+win.postMessage("message", "http://example.com");
 </script>
 
 </body>
