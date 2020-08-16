@@ -1,14 +1,10 @@
 <html>
-<body>
-
-<p>Lisstener sample</p>
-
-<script>
-let win = window.frames.example;
-win.postMessage("message", "http://example.com");
-</script>
-
-</body>
+    <body>
+        
+        <p>Listener sample</p>
+        
+        <script>
+            window.webkit.messageHandlers.iosListener.postMessage({ param1: "message from JS", param2: "1000"});
+            </script>        
+    </body>
 </html>
-
-
