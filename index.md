@@ -1,10 +1,16 @@
 <html>
     <body>
         
-        <p>Listener sample</p>
+        <p>Click the button to test</p>
+        
+        <button onclick="postMsg()">Try It</button>
         
         <script>
-            window.webkit.messageHandlers.iosListener.postMessage({ param1: "message from JS", param2: "1000"});
-            </script>        
-    </body>
+            
+            function postMsg() {
+                window.webkit.messageHandlers.iosListener.postMessage({ param1: "message from JS", param2: "1000"});
+            }
+        
+            </script>
+        
 </html>
