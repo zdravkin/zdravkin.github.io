@@ -8,7 +8,7 @@
         <script>
             
             function postMsg() {
-                window.webkit.messageHandlers.iosListener.postMessage({ param1: "message from JS", param2: "1000"});
+                window.webkit.messageHandlers.iosListener.postMessage({ param1: "message from JS", param2: "Our QA is Sergey Matylionok"});
             }
         
             </script>
